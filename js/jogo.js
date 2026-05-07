@@ -91,6 +91,12 @@
           //incrementa o contador de acertos
           acertos++;
         } else {//se errou a tentativa
+          obj.className = "acertou";
+          //Criar uma constante img que armazena um novo objeto imagem com largura de 100px
+          const img = new Image(100);
+          img.id = "imagem";
+          //altera o atributo src (source) da imagem criada
+          img.src = "https://pbs.twimg.com/media/GP06uDpb0AAPfvZ.jpg"
           //altera a classe da <div> escolhida pelo jogador para a classe errou
           obj.className = "errou";
           //armazena a div aonde Smile está escondido (getElementById)
